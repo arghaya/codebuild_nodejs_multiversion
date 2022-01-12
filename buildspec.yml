@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+  install:
+    commands:
+####for running fixed nodeJS version
+     - n 16.13.1
+     - node hello.js
+####for running latest available patch of v17 
+     - n 17
+     - node hello.js
+####for running non supported version  
+     - n 4
+     - node hello.js 
+     
